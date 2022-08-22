@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsAccountComponent implements OnInit {
 
+  nom: string = "TestNom";
+
   constructor() { }
 
   ngOnInit(): void {

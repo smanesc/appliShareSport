@@ -5,7 +5,7 @@
     position: fixed;
     height: 72px;
     width: 100%;
-    background-color:silver;
+    background-color:#030c38;
     top: 0;
     left: 0;
     align-items: center;
@@ -14,6 +14,7 @@
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.5em;
+    color: #64a6f2;
 }
 
 #logoSport {
@@ -23,7 +24,7 @@ h2 {
 #logoHome {
     margin-right: 20px;
     font-size: 2.5em;
-    color: black;
+    color: #64a6f2;
 }
 
 #logoHome:hover {
