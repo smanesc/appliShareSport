@@ -1,0 +1,48 @@
+{
+    "rando": [
+        {
+            "id": 1,
+            "nom": "Rando 1",
+            "difficulte": "Débutant",
+            "distance": "8km",
+            "lieu": "Vosges"
+        },
+        {
+            "id": 2,
+            "nom": "Rando 2",
+            "difficulte": "Confirmé",
+            "distance": "14km",
+            "lieu": "Jura"
+        },
+        {
+            "id": 3,
+            "nom": "Rando 3",
+            "difficulte": "Expert",
+            "distance": "20km",
+            "lieu": "Alpes"
+        }
+    ],
+    "course": [
+        {
+            "id": 1,
+            "nom": "Course 1",
+            "difficulte": "Débutant",
+            "distance": "8km",
+            "lieu": "Vosges"
+        },
+        {
+            "id": 2,
+            "nom": "Course 2",
+            "difficulte": "Confirmé",
+            "distance": "14km",
+            "lieu": "Jura"
+        },
+        {
+            "id": 3,
+            "nom": "Course 3",
+            "difficulte": "Expert",
+            "distance": "24km",
+            "lieu": "Alpes"
+        }
+    ]
+}
