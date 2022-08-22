@@ -1,1 +1,28 @@
-<p>tabs-account works!</p>
+<div id="tabsAccount">
+    <p-tabView>
+        <p-tabPanel leftIcon="pi pi-user">
+            <ng-template pTemplate="header">
+                <span class="tabTitle">Identité</span>
+            </ng-template>
+           <app-form-account></app-form-account>
+        </p-tabPanel>
+        <p-tabPanel leftIcon="pi pi-map">
+            <ng-template pTemplate="header">
+                <span class="tabTitle">Favoris Rando</span>
+            </ng-template>
+            Content 2
+        </p-tabPanel>
+        <p-tabPanel leftIcon="pi pi-flag-fill">
+            <ng-template pTemplate="header">
+                <span class="tabTitle">Inscriptions Courses</span>
+            </ng-template>
+            Content 3
+        </p-tabPanel>
+        <p-tabPanel>
+            <ng-template pTemplate="header">
+                <span class="tabTitle">Coaching</span>
+            </ng-template>
+            Content 3
+        </p-tabPanel>
+    </p-tabView>
+</div>

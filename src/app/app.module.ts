@@ -8,16 +8,26 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { TabsAccountComponent } from './tabs-account/tabs-account.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { TabViewModule } from 'primeng/tabview';
+import {ButtonModule} from 'primeng/button';
+import { FormAccountComponent } from './form-account/form-account.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     TitleBarComponent,
-    TabsAccountComponent
+    TabsAccountComponent,
+    FormAccountComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TabViewModule,
+    ReactiveFormsModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

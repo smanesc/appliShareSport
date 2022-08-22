@@ -1,0 +1,13 @@
+<form [formGroup]="identite">
+    <label>Nom:</label><input type="text" formControlName="nom" [(ngModel)]="nom" [disabled]="isDisabled"><br/>
+    <label>Prenom:</label> <input type="text" formControlName="prenom" [(ngModel)]="prenom" [disabled]="isDisabled"/><br/>
+    <label>Email:</label> <input type="text" formControlName="email" [(ngModel)]="email" [disabled]="isDisabled"/><br/>
+    <label>Mot de passe:</label> <input type="password" formControlName="password" [(ngModel)]="password" [disabled]="isDisabled"/><br/>
+    <div id="divButton">
+        <button pButton type="button" class="p-button-raised" (click)="enableForm()">Modifier</button>
+        <button pButton type="button" class="p-button-raised" (click)="disableForm()" [disabled]="!identite.valid">Valider</button>
+    </div>
+</form>
+
+
+
