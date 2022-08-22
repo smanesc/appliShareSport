@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TabViewModule } from 'primeng/tabview';
 import {ButtonModule} from 'primeng/button';
 import { FormAccountComponent } from './form-account/form-account.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,14 +21,15 @@ import { FormAccountComponent } from './form-account/form-account.component';
     NavBarComponent,
     TitleBarComponent,
     TabsAccountComponent,
-    FormAccountComponent,
+    FormAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TabViewModule,
     ReactiveFormsModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
