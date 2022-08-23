@@ -8,11 +8,19 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { TabsAccountComponent } from './tabs-account/tabs-account.component';
 
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TabViewModule } from 'primeng/tabview';
-import {ButtonModule} from 'primeng/button';
-import { FormAccountComponent } from './form-account/form-account.component';
+import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
+import { DropdownModule } from 'primeng/dropdown';
+ 
+import { FormAccountComponent } from './form-account/form-account.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { GenericButtonComponent } from './generic-button/generic-button.component';
+import { HomeComponent } from './home/home.component';
+import { AccountComponent } from './account/account.component';
+import { CourseComponent } from './course/course.component';
 
 
 @NgModule({
@@ -21,7 +29,12 @@ import { HttpClientModule } from '@angular/common/http';
     NavBarComponent,
     TitleBarComponent,
     TabsAccountComponent,
-    FormAccountComponent
+    FormAccountComponent,
+    DropdownComponent,
+    GenericButtonComponent,
+    HomeComponent,
+    AccountComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +42,9 @@ import { HttpClientModule } from '@angular/common/http';
     TabViewModule,
     ReactiveFormsModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
