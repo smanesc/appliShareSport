@@ -1,5 +1,18 @@
-#divButton {
+#infoPart { 
     position: fixed;
-    top: 50em;
-    right: 20em;
-}
+    left: 12em;
+ }
+ 
+ #choicePart {
+     position: fixed;
+     top: 15em;
+     left: 12em;
+     width: 50%;
+     height: 80%;
+ }
+ 
+ #divButton {
+     position: fixed;
+     top: 43em;
+     right: 16em;
+ }
