@@ -1,7 +1,4 @@
 #divDropdown {
-    position: fixed;
-    top: 8em;
-    left: 8em;
     width: 25%;
     height: 50%;
     border: solid 2px;
@@ -24,6 +21,3 @@ p-dropdown {
     text-align: center;
 }
 
-.listItem {
-    
-}
