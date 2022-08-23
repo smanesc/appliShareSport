@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CardModule } from 'primeng/card';
 import Course from 'src/app/models/course.model';
 import { CourseService } from 'src/app/services/course.service';
-import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-course-info',
@@ -12,20 +8,18 @@ import { catchError } from 'rxjs/operators';
   styleUrls: ['./course-info.component.css']
 })
 export class CourseInfoComponent implements OnInit {
-  courses!: Observable<Course[]>;
+  courseTable: Course[] = [];
+  courseTableNom: string[] = [];
+  selectedCourse: any;
 
   constructor(
-    private courseService: CourseService,
-    private http: HttpClient,
+    private serviceCourse: CourseService,
     ) { }
 
 
     ngOnInit() {
-      this.courses = this.courseService.getCourses().pipe(
-        catchError(error => {
-          console.log('Error fetching articles:', error);
-          return throwError(error);
-        }
-      ));
+      this.serviceCourse
+    .getCourses()
+    .subscribe((course => [this.courseTable = course]));
     }
 }
