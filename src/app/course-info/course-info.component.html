@@ -1,0 +1,27 @@
+<ng-container *ngIf="(courses | async) as courses">
+    <div *ngFor="let course of courses">
+        <div class="course">
+            <p-card>
+                <div class="card-haut">
+                    <div class="imgCard">
+                        <img src="{{course.image}}">
+                    </div>
+                    <div>
+                        <div>
+                            <p class="cardCritere">{{course.nom}}</p>
+                        </div>
+                        <div>
+                            <p class="cardCritere">Difficulté : <i>{{course.difficulte}}</i></p>
+                        </div>
+                        <div>
+                            <p class="cardCritere">Distance : <i>{{course.distance}}</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="cardText">{{course.texte}}</p>
+                </div>
+            </p-card>
+        </div>
+    </div>
+</ng-container>

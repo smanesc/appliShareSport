@@ -24,6 +24,7 @@ import { CourseComponent } from './course/course.component';
 import { RandoComponent } from './rando/rando.component';
 import { RandoInfoComponent } from './rando-info/rando-info.component';
 import { CardModule } from 'primeng/card';
+import { CourseInfoComponent } from './course-info/course-info.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CardModule } from 'primeng/card';
     AccountComponent,
     CourseComponent,
     RandoComponent,
-    RandoInfoComponent
+    RandoInfoComponent,
+    CourseInfoComponent
   ],
   imports: [
     BrowserModule,
