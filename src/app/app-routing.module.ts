@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'account', component: AccountComponent},
   {path: 'course', component: CourseComponent},
-  {path: 'rando', component: RandoComponent},
+  {path: 'rando', component: RandoComponent}
 ];
 
 @NgModule({

@@ -14,6 +14,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdownModule } from 'primeng/dropdown';
+import {ListboxModule} from 'primeng/listbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { FormAccountComponent } from './form-account/form-account.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -25,6 +27,7 @@ import { RandoComponent } from './rando/rando.component';
 import { RandoInfoComponent } from './rando-info/rando-info.component';
 import { CardModule } from 'primeng/card';
 import { CourseInfoComponent } from './course-info/course-info.component';
+import { LabelComponent } from './label/label.component';
 
 
 @NgModule({
@@ -41,10 +44,12 @@ import { CourseInfoComponent } from './course-info/course-info.component';
     CourseComponent,
     RandoComponent,
     RandoInfoComponent,
-    CourseInfoComponent
+    CourseInfoComponent,
+    LabelComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     TabViewModule,
     ReactiveFormsModule,
@@ -52,7 +57,8 @@ import { CourseInfoComponent } from './course-info/course-info.component';
     HttpClientModule,
     FormsModule,
     DropdownModule,
-    CardModule
+    CardModule,
+    ListboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

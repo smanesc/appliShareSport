@@ -1,11 +1,9 @@
 <div id="divDropdown">
-    <p>dropdown works!</p>
 
-    <ul *ngFor="let r of randoTable">
-        <li>
-            {{r.nom}} {{r.difficulte}}
-        </li>
-    </ul>
+    <app-label value="Choix rando"></app-label>
+
+    <p-dropdown id="dropdown" [options]="regionTable" [(ngModel)]="selectedArea" optionLabel="nom"></p-dropdown>
+
+    <p-listbox [options]="randoTable" [(ngModel)]="selectedItem" optionLabel="nom"></p-listbox>
+
 </div>
-
-<p-dropdown [options]="randoTable" [(ngModel)]="selectedRando"></p-dropdown>
