@@ -14,6 +14,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdownModule } from 'primeng/dropdown';
+import {ListboxModule} from 'primeng/listbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { FormAccountComponent } from './form-account/form-account.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -45,6 +47,7 @@ import { CourseInfoComponent } from './course-info/course-info.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     TabViewModule,
     ReactiveFormsModule,

@@ -57,5 +57,31 @@
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Stockholmmarathon_2009-start3.jpg",
             "texte": "Les marathons les plus prestigieux sont ceux des Jeux olympiques d'été (quadriennaux), des Championnats du monde d'athlétisme (biennaux) et ceux des World Marathon Majors (annuels) : Tokyo (fin février), Boston (mi-avril), Londres (fin avril), Berlin (fin septembre), Chicago (mi-octobre) et New York (début novembre)."
         }
+    ],
+    "regions": [
+        {   
+            "id": 1,
+            "nom": "Sud-ouest"
+        },
+        {   
+            "id": 2,
+            "nom": "Sud-est"
+        },
+        {   
+            "id": 3,
+            "nom": "Nord-ouest"
+        },
+        {   
+            "id": 4,
+            "nom": "Nord-est"
+        },
+        {   
+            "id": 5,
+            "nom": "Centre"
+        },
+        {
+            "id": 6,
+            "nom": "Region parisienne"
+        }
     ]
 }

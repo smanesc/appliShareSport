@@ -2,4 +2,28 @@
     position: fixed;
     top: 8em;
     left: 8em;
+    width: 25%;
+    height: 50%;
+    border: solid 2px;
+    color: white;
+    border-radius: 10px;
+    background-color: #030c38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#select {
+    text-align: center;
+    width: 40%; 
+}
+
+p-dropdown {
+    width: 40%;
+    text-align: center;
+}
+
+.listItem {
+    
 }
