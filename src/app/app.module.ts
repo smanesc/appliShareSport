@@ -21,6 +21,9 @@ import { GenericButtonComponent } from './generic-button/generic-button.componen
 import { HomeComponent } from './home/home.component';
 import { AccountComponent } from './account/account.component';
 import { CourseComponent } from './course/course.component';
+import { RandoComponent } from './rando/rando.component';
+import { RandoInfoComponent } from './rando-info/rando-info.component';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -34,7 +37,9 @@ import { CourseComponent } from './course/course.component';
     GenericButtonComponent,
     HomeComponent,
     AccountComponent,
-    CourseComponent
+    CourseComponent,
+    RandoComponent,
+    RandoInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { CourseComponent } from './course/course.component';
     ButtonModule,
     HttpClientModule,
     FormsModule,
-    DropdownModule
+    DropdownModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

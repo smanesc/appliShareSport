@@ -1,0 +1,27 @@
+<ng-container *ngIf="(randos | async) as randos">
+    <div *ngFor="let rando of randos">
+        <div class="rando">
+            <p-card>
+                <div class="card-haut">
+                    <div class="imgCard">
+                        <img src="{{rando.image}}">
+                    </div>
+                    <div>
+                        <div>
+                            <p class="cardCritere">{{rando.nom}}</p>
+                        </div>
+                        <div>
+                            <p class="cardCritere">Difficulté : <i>{{rando.difficulte}}</i></p>
+                        </div>
+                        <div>
+                            <p class="cardCritere">Distance : <i>{{rando.distance}}</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="cardText">{{rando.texte}}</p>
+                </div>
+            </p-card>
+        </div>
+    </div>
+</ng-container>

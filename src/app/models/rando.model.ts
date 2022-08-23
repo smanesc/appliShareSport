@@ -4,4 +4,6 @@ export default interface Rando {
     difficulte: string;
     distance: string;
     lieu: string;
+    image: string;
+    texte: string;
 }

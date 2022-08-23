@@ -4,4 +4,6 @@ export default interface Course {
     difficulte: string;
     distance: string;
     lieu: string;
+    image: string;
+    texte: string;
 }

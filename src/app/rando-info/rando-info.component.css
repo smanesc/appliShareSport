@@ -1,0 +1,42 @@
+.rando {
+    position: fixed;
+    top: 10em;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.cardTitle {
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.cardCritere {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.cardText {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.imgCard {
+    width: 80%;
+}
+
+.imgCard img{
+    border-radius: 40px;
+    width: 100%;
+}
+
+.card-haut {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-haut div {
+    padding: 10px;
+}
