@@ -14,10 +14,10 @@ export class RandoService {
   constructor(private httpClient: HttpClient) { }
 
   getRandos(): Observable<Rando[]> {
-    return this.httpClient.get<Rando[]>(`${this.apiUrl}/randos`);
+    return this.httpClient.get<Rando[]>(`${this.apiUrl}/rando`);
   }
 
   getRando(id: number): Observable<Rando> {
-    return this.httpClient.get<Rando>(`${this.apiUrl}/randos/${id}`);
+    return this.httpClient.get<Rando>(`${this.apiUrl}/rando/${id}`);
   }
 }
